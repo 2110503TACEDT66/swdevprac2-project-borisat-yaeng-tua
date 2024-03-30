@@ -1,10 +1,10 @@
-import Link from "next/link";
-import styles from './TopMenu.module.css'
+import styles from "./TopMenu.module.css"
+import Link from "next/link"
 
-export default function TopMenuItem ({title,pageRef} : {title:string, pageRef:string }){
-    return(
-        <Link href={pageRef} className={styles.itemcontainer}>
-            {title}
-        </Link>
-    );
+export default function TopMenuItem ({title, pageRef} : {title:string, pageRef:string}) {
+  return (
+    <Link href={pageRef} className={styles.itemcontainer}>
+      {title}
+    </Link>
+  )
 }
